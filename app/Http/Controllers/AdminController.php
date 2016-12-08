@@ -31,6 +31,30 @@ class AdminController extends Controller {
     }
 
     public function stripe() {
+
+//<html>
+//<head>
+//<h1> stripe - view </h1>
+//</head>
+//<body>
+//<h1>Buy mu book for 25$.</h1>
+//
+//<form action="{{route('purchases')}}" method="POST">
+//    {{ csrf_field() }}
+//    <script
+//            src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+//            data-key="pk_test_6pRNASCoBOKtIshFeQd4XMUh"
+//            data-amount="2500"
+//            data-name="Some Book"
+//            data-description="This will give you everything you need to get started."
+//            data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+//            data-locale="auto"
+//            data-zip-code="true">
+//    </script>
+//</form>
+//</body>
+//</html>
+
         return view('admin/stripe');
     }
 
