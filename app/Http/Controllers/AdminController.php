@@ -29,4 +29,12 @@ class AdminController extends Controller {
 
         return redirect()->route('allUsers');
     }
+
+    public function stripe() {
+        return view('admin/stripe');
+    }
+
+    public function store() {
+        dd(request()->all());
+    }
 }

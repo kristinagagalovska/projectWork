@@ -23,6 +23,9 @@ Route::get('/adminPanel', 'AdminController@index')->name('adminPanel');
 Route::get('/allUsers', 'AdminController@allUsers')->name('allUsers');
 Route::post('/allUsers', 'AdminController@setPosition')->name('setPosition');
 
+Route::get('/stripe', 'AdminController@stripe')->name('stripe');
+Route::post('/purchases', 'AdminController@store')->name('purchases');
+
 Route::get('/allCompanies', 'CompanyController@all')->name('allCompanies');
 
 Route::get('/createCompany', 'CompanyController@create')->name('createCompany');
